@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#dicebar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#choicebar {
+    margin-top: 10vh;
+}
+
+#choicebar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 30vw;
+    margin-left: 35vw;
+}
+
+#choicebar ul li {
+    padding: 0;
+    margin: 0;
+}
+
+#choicebar ul li button {
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+
+#gamebar {
+    display: none;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 20vw;
+    width: 80vw;
+    margin: 10vh 10vw 0 10vw;
+}
+
+#player1 {
+    background-color: aqua;
+    width: 20vw;
+    height: 20vw;
+}
+
+#player2 {
+    background-color: aqua;
+    width: 20vw;
+    height: 20vw;
+}
+
+#startover {
+    display: none;
+}
