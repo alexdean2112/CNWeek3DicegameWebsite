@@ -14,8 +14,12 @@ body {
     margin-top: 10vh;
 }
 
+#diceimage {
+    width: 18vw;
+}
+
 #choicebar {
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 #choicebar ul {
@@ -34,6 +38,10 @@ body {
 #choicebar ul li button {
     padding: 0;
     margin: 0 10px 0 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid blue
 }
 
 #gamebar {
@@ -41,21 +49,89 @@ body {
     justify-content: space-evenly;
     height: 20vw;
     width: 80vw;
-    margin: 10vh 10vw 0 10vw;
+    margin: 5vh 10vw 0 10vw;
 }
 
 #player1 {
     background-color: aqua;
-    width: 20vw;
-    height: 20vw;
+    width: 35vw;
+    height: 40vh;
 }
 
 #player2 {
     background-color: aqua;
-    width: 20vw;
-    height: 20vw;
+    width: 35vw;
+    height: 40vh;
 }
 
 #startover {
     display: none;
+}
+
+.playername {
+    display: flex;
+    justify-content: center;
+}
+
+.scorebar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+}
+
+.wincounter {
+    display: flex;
+    justify-content: space-around;
+    width: 9.6vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+.rollbar {
+    display: flex;
+    justify-content: center;
+}
+
+#roll1, #roll2 {
+    margin-top: 10vh;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid blue
+}
+
+#gamebar p {
+    font-size: 25px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 1100px){
+    #player1, #player2 {
+        height: 40vh;
+        width: 35vw;
+    }
+
+    .scorebar {
+        flex-direction: column;
+    }
+
+    .wincounter {
+        flex-direction: column;
+    }
+
+    #roll1, #roll2 {
+        margin-top: 3vh;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #gamebar p {
+        font-size: 20px;
+    }
+
+    #choicebar ul li button {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+
 }

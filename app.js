@@ -12,6 +12,8 @@ const wins1 = document.getElementById("wins1")
 const wins2 = document.getElementById("wins2")
 const rollcounter1 = document.getElementById("rollcounter1")
 const rollcounter2 = document.getElementById("rollcounter2")
+const burger1 = document.getElementById("burgericonbutton1")
+const burger2 = document.getElementById("burgericonbutton2")
 
 function wincheck1() {
     if (parseInt(score1.textContent) >= 20) {
@@ -128,31 +130,26 @@ roll2.addEventListener("click", () => {
         }
         else if (num === 2) {
             dice.src = "./images/dice2.png"
-            let num2 = parseInt(score1.textContent)
             score2.textContent = (parseInt(score2.textContent) + 2)
             wincheck2()
         }
         else if (num === 3) {
             dice.src = "./images/dice3.png"
-            let num2 = parseInt(score1.textContent)
             score2.textContent = (parseInt(score2.textContent) + 3)
             wincheck2()
         }
         else if (num === 4) {
             dice.src = "./images/dice4.png"
-            let num2 = parseInt(score1.textContent)
             score2.textContent = (parseInt(score2.textContent) + 4)
             wincheck2()
         }
         else if (num === 5) {
             dice.src = "./images/dice5.png"
-            let num2 = parseInt(score1.textContent)
             score2.textContent = (parseInt(score2.textContent) + 5)
             wincheck2()
         }
         else if (num === 6) {
             dice.src = "./images/dice6.png"
-            let num2 = parseInt(score1.textContent)
             score2.textContent = (parseInt(score2.textContent) + 6)
             wincheck2()
         }
