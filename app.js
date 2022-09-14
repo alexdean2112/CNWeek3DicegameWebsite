@@ -19,6 +19,8 @@ function wincheck1() {
     if (parseInt(score1.textContent) >= 20) {
         score1.textContent = "You Win!"
         wins1.textContent = (parseInt(wins1.textContent) + 1)
+        roll1.textContent = "New Game"
+        roll2.textContent = "New Game"
     }
 }
 
@@ -26,6 +28,8 @@ function wincheck2() {
     if (parseInt(score2.textContent) >= 20) {
         score2.textContent = "You Win!"
         wins2.textContent = (parseInt(wins2.textContent) + 1)
+        roll1.textContent = "New Game"
+        roll2.textContent = "New Game"
     }
 }
 
@@ -81,6 +85,8 @@ startover.addEventListener("click", () => {
 })
 
 roll1.addEventListener("click", () => {
+    roll1.textContent = "Roll"
+    roll2.textContent = "Roll"
     gamereset()
     singleplayer()
     rollcounter1.textContent = (parseInt(rollcounter1.textContent) + 1)
@@ -118,6 +124,8 @@ roll1.addEventListener("click", () => {
 })
 
 roll2.addEventListener("click", () => {
+    roll1.textContent = "Roll"
+    roll2.textContent = "Roll"
     gamereset()
     roll2.style.display = "none"
     roll1.style.display = "block"

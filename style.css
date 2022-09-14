@@ -6,16 +6,19 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: #494D5F;
 }
 
 #dicebar {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 3vh;
 }
 
 #diceimage {
     width: 18vw;
+    border-radius: 20px;
+    border: 4px solid #8458B3;
 }
 
 #choicebar {
@@ -41,7 +44,8 @@ body {
     font-size: 25px;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid blue
+    border: 4px solid #8458B3;
+    background-color: #d08df4;
 }
 
 #gamebar {
@@ -53,15 +57,19 @@ body {
 }
 
 #player1 {
-    background-color: aqua;
+    border: 4px solid #8458B3;
+    border-radius: 10px;
     width: 35vw;
-    height: 40vh;
+    height: 35vh;
+    background-color: #d08df4;
 }
 
 #player2 {
-    background-color: aqua;
+    border: 4px solid #8458B3;
+    border-radius: 10px;
     width: 35vw;
-    height: 40vh;
+    height: 35vh;
+    background-color: #d08df4;
 }
 
 #startover {
@@ -71,12 +79,15 @@ body {
 .playername {
     display: flex;
     justify-content: center;
+    padding: 1vh 0;
+    background-color: #8458B3;
 }
 
 .scorebar {
     display: flex;
     justify-content: space-around;
     margin-top: 3vh;
+    margin-left: 5px;
 }
 
 .wincounter {
@@ -93,11 +104,12 @@ body {
 }
 
 #roll1, #roll2 {
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-size: 25px;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid blue
+    border: 4px solid #8458B3;
+    background-color: #d08df4;
 }
 
 #gamebar p {
@@ -106,7 +118,7 @@ body {
 
 @media screen and (min-width: 250px) and (max-width: 1100px){
     #player1, #player2 {
-        height: 40vh;
+        height: 35vh;
         width: 35vw;
     }
 
@@ -133,5 +145,7 @@ body {
         padding: 5px;
     }
 
-
+    #dicebar {
+        margin-top: 6vh;
+    }
 }
