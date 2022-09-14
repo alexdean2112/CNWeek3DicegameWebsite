@@ -12,8 +12,6 @@ const wins1 = document.getElementById("wins1")
 const wins2 = document.getElementById("wins2")
 const rollcounter1 = document.getElementById("rollcounter1")
 const rollcounter2 = document.getElementById("rollcounter2")
-const burger1 = document.getElementById("burgericonbutton1")
-const burger2 = document.getElementById("burgericonbutton2")
 
 function wincheck1() {
     if (parseInt(score1.textContent) >= 20) {
